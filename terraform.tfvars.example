@@ -1,0 +1,26 @@
+aws_region = ""
+
+access_key = ""
+secret_key = ""
+
+aws_key_name = ""
+aws_key_path = "/path/my-key-pair.pem"
+
+aws_instance_user = "ec2-user"
+aws_instance_type = "t2.micro"
+
+aws_security_group.sg_count = "2"
+
+aws_security_group.sg_0_name = "ssh"
+aws_security_group.sg_0_from_port = "22"
+aws_security_group.sg_0_to_port = "22"
+aws_security_group.sg_0_protocol = "tcp"
+
+aws_security_group.sg_1_name = "http"
+aws_security_group.sg_1_from_port = "80"
+aws_security_group.sg_1_to_port = "80"
+aws_security_group.sg_1_protocol = "tcp"
+
+// A container with an application we can launch - specify the port mappings below also 
+docker_container = ""
+ec2_to_docker_port_mapping = "80:8080"
